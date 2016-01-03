@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="NoteButton">
+        <attr name="hsheight" format="integer" />
+
+    </declare-styleable>
+</resources>

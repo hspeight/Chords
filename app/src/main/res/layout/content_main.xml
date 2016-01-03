@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.chords.hector.chords.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Start"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="90dp"
+            android:clickable="true"
+            android:onClick="startQuiz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Middle"
+        android:id="@+id/textView3"
+        android:textSize="40dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlayResponse"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linResponseKey1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:id="@+id/textResponse1"
+                android:layout_centerHorizontal="true"
+                android:textSize="60dp"
+                android:layout_gravity="bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b"
+                android:id="@+id/textResponse1a"
+                android:textSize="40dp"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linResponseKey2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:id="@+id/textResponse2"
+                android:layout_centerHorizontal="true"
+                android:textSize="60dp"
+                android:layout_gravity="bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:id="@+id/textResponse2a"
+                android:textSize="40dp"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linResponseKey3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:id="@+id/textResponse3"
+                android:layout_centerHorizontal="true"
+                android:textSize="60dp"
+                android:layout_gravity="bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b"
+                android:id="@+id/textResponse3a"
+                android:textSize="40dp"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutR1"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/linlayResponse">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutR2"
+        android:layout_below="@+id/linearLayoutR1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutR3"
+        android:layout_below="@+id/linearLayoutR2"
+        android:layout_alignParentBottom="false">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/note12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".25"
+            android:layout_margin="2dp">
+        </Button>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_below="@+id/linearLayoutR3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar1"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>
